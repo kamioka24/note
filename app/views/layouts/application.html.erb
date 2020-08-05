@@ -10,6 +10,16 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+      <ul class="header_list">
+        <li><%= link_to "新規", new_post_path %></li>
+        <li><%= link_to "一覧", posts_path %></li>
+      </ul>
+    </header>
+    <main>
+      <div class="container">
+        <%= yield %>
+      </div>
+    </main>
   </body>
 </html>
