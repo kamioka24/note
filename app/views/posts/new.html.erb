@@ -1,10 +1,16 @@
-<%= form_for(@post) do |f| %>
-	<p>タイトル<br>
-	<%= f.text_field :title %></p>
-
-	<p>内容<br>
-	<%= f.text_area :body %></p>
-
-	<%= f.submit "記録" %>
-
-<% end %>
+<table width="500">
+	<%= form_for(@post) do |f| %>
+		<tr>
+			<th>タイトル</th>
+			<td><%= f.text_field :title %></td>
+		</tr>
+		<tr>
+			<th>内容</th>
+			<td><%= f.text_area :body %></td>
+		</tr>
+		<tr>
+			<th></th>
+			<td><%= f.submit "記録" %></td>
+		</tr>
+	<% end %>
+</table>
